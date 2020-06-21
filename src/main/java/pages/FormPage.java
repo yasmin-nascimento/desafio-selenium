@@ -1,11 +1,11 @@
 package pages;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 public class FormPage {
 
@@ -53,6 +53,7 @@ public class FormPage {
 	
 	public void clicarBotaoEnviar() {
 		driver.findElement(botaoEnviar).click();
+		
 	}
 	
 	public String obterNome() {
